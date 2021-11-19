@@ -1,0 +1,81 @@
+Napraviti program za stampanje racuna u kaficu
+1. Napraviti klasu Sastojak koja ima:
+Atribute: 
+Naziv
+Kolicina u gramima
+Cena po gramu
+Konstrukrore, gettere i settere
+Metodu cena sastojaka (vraca cenu sastojka koja se racuna po formuli kolicina u gr * cana po gr)
+Metodu stampaj koja vrsi ispis u formatu naziv sastojak, cena sastojka
+Primer ispisa:
+
+limun, cena: 30.0 din
+
+2. Napraviti apstraktnu klasu Pice koja ima:
+Atribute: 
+* naziv, 
+* listu sastojaka (predstavlja listu svih sastojaka pica npr. Mohito ima limunadu, mentu i votku)
+Konstrukrore, gettere i settere
+Metodu dodaj sastojak (parametar prima sastojak i dodaje ga u listu sastojaka)
+Metodu cena svih sastojaka koja vraca  zbir cena svih sastojaka iz liste sastojaka
+Apstraktnu metodu cenaPica 
+Apstraktnu metodu stampaj
+
+3. Napraviti klasu Kafa koja nasledjuje Pice koja ima
+Atribute: 
+Procenat kofeina
+Konstrukrore, gettere i settere
+Metodu koja racuna cenuPica po formuli (procenat kofeina * 30) + cena svih sastojaka
+Metodu stampaj koja stampa ukupnu cenu kafe i sve sastojke sa cenama sastojaka
+Primer ispisa:
+
+Mocha, procenat kofeina: 1%, cena: 150.0 din
+Sastojci: 
+Mleko, cena: 50.0 din
+Slag, cena: 70.0 din
+
+4. Napraviti klasu Koktel koja nasledjuje Pice koja ima
+Konstrukrore, gettere i settere
+Metodu koja racuna cenuPica po formuli 1.9 *  cena svih sastojaka
+Metodu stampaj koja stampa ukupnu cenu koktela i sve sastojke sa cenama sastojaka
+Primer ispisa:
+
+Koktel: mojito, cena:114.0 din
+Sastojci: 
+limun, cena: 30.0 din
+menta, cena: 20.0 din
+votka, cena: 10.0 din
+
+5. U glavnoj klasi napraviti listu pica koja ce sadrzati dve kafe I tri koktela (svako pice ima nekoliko sastojaka) i na kraju ispisati racun u formatu:
+Pica koja ste porucili: 
+1. pice: Mocha, procenat kofeina: 1%, cena: 150.0 din
+Sastojci: 
+Mleko, cena: 50.0 din
+Slag, cena: 70.0 din
+-----------------------------------
+2. pice: NesKafa, procenat kofeina: 3%, cena: 235.0 din
+Sastojci: 
+Sladoled, cena: 25.0 din
+Slag, cena: 70.0 din
+Mleko, cena: 50.0 din
+-----------------------------------
+3. pice: Koktel: mojito, cena:114.0 din
+Sastojci: 
+limun, cena: 30.0 din
+menta, cena: 20.0 din
+votka, cena: 10.0 din
+-----------------------------------
+4. pice: Koktel: White Rusian, cena:114.0 din
+Sastojci: 
+votka, cena: 10.0 din
+Mleko, cena: 50.0 din
+-----------------------------------
+5. pice: Koktel: Bambus, cena:95.0 din
+Sastojci: 
+crno vino, cena: 20.0 din
+koka kola, cena: 30.0 din
+-----------------------------------
+Ukupan iznos racuna je: 708.0
+
+
+
